@@ -2,10 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import About from "./components/About";
-import Home from "./components/Home";
 import "./resets.scss";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import C1 from "./challenge1/C1";
+import C1 from "./challenge1/Cha1One";
 
 ReactDOM.render(
   <Router>

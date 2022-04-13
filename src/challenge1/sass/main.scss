@@ -1,6 +1,84 @@
+// make the grade stuff dissapear?
+.dis-none {
+  display: none;
+}
+
 .bg {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: relative;
-  background-color: hsl(216, 12%, 8%);
+  background-color: #141519;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 25px;
+  border-radius: 20px;
+  background-color: #202731;
+  width: 320px;
+
+  .star-container {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #262f38;
+
+    img {
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  h1 {
+    margin-top: 15px;
+  }
+
+  // only div inside this class, the one whit the ratings
+  div {
+    margin-block: 15px;
+  }
+
+  div > span {
+    background-color: #262f38;
+    border-radius: 50%;
+    padding: 10px 15px;
+    margin: 2px 4px;
+
+    &:hover {
+      background-color: #fd770f;
+    }
+
+    &:active {
+      background-color: red;
+    }
+  }
+
+  // submit btn
+  .btn {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 13px;
+    background-color: #fd770f;
+    color: #fff;
+    border-radius: 23px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #fff;
+      color: #fd770f;
+    }
+  }
+
+  // rating section
+  .rating {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rating > * {
+    cursor: pointer;
+  }
 }
